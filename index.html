@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/Google-favicon-2015.png" type="image/x-icon">
+    <title>Google Landing Page</title>
+</head>
+<body>
+    
+
+    <!-- Landing page, kullaniciyi kisa zamanda amacina götüren
+    hedef odakli ayrintilara bogmayan web sitesi  demektir. -->
+
+    <!-- BEM metodolojisi class ve id isimlendirme icin 
+    2009 yilinda yandex tarafindan -->
+
+    <!-- 
+    id ler mümkün mertebe  css de kullanilmaz
+    css de daha cok class terdih edilir
+    id ler genellikle js tarafindan kullanilir
+
+
+    react single page application 
+    tek sayfadan calisiyor gibi düsünelim 
+
+    Bem  block element modifier acilimi
+
+    block en distaki kapsayici konteynir 
+    yani mesela card en distaki tasicisi
+    card__image  card ici resim (burada iki tane _ var)
+    ana tasiyici altindali ilk child icin 
+    __ kullanilir. ikinci child larda ise -- kullanilir
+    card__description 
+    card__button--success  iki buton var ama amaclari farkli 
+    card__button--back -->
+
+
+    <!-- what font 
+    what ninja
+    page ruler
+    css viewer -->
+
+
+    <header>
+        <ul class="header__left">
+            <li><a href="">About</a> </li>
+            <li><a href="">Store</a> </li>
+        </ul>
+
+
+        <ul class="header__right">
+            <li><a href=""> Gmail</a> </li>
+            <li><a href="">Images</a>  </li>
+            <li>
+                <img src="./img/appicon.png" alt="Application Icon" class="header__right--appicon"> 
+            </li>
+            <li>
+                <button type="button" class="header__right--button">Sign In</button> 
+            </li>
+        </ul>
+
+        <!-- a lari li icine yazmasak konumlandirma zor olur a lar inline element oldugu icin daha zordur genelde div leri block elementleri konum daha kolay  -->
+    </header>
+
+
+        <!-- Burada header a verilen float lar main i etkilemesin diye
+        bos bir div olusturuyoruz ve buna clear diyoruz -->
+   
+   
+        <div class="clear"></div>
+
+
+
+
+
+
+    <!-- main  -->
+
+
+    <main class="main">
+
+        <img src="./img/googlelogo.png" alt="Logo" 
+        class="main__logo" title="Google Logo">
+
+        <!-- Bir elemana title verildiginde üzerine maus 
+        gelince ismi cikar  -->
+
+        <div class="main__search-bar">
+            <img src="./img/magnifying_glass.jpg" alt="Magnifiying"
+            class="main__search-bar--magnifier">
+
+            <input type="search" name="" class="main__search-bar--input" autofocus>
+
+            <!-- autofocus boolean türünde bir özelliktir.
+            css de degil html de input tagi icinde kullanilir 
+            ve sayfa yüklendiginde direkt input icinde cursor
+            yanip söner  -->
+
+            <img src="./img/google_microphone.png" alt="Microphone"
+            class="main__search-bar--microphone">
+
+        </div>
+
+
+
+        <div class="main__buttons">
+            <button type="button" class="main__buttons--left">
+                Google Search
+            </button>
+
+            <button type="button" class="main__buttons--right">
+                I'm Feeling Lucky
+            </button>
+        </div>
+
+        <div class="main__language">
+            <p> Other Languages you can use Google: <a href="">English</a> </p>
+        </div>
+
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="footer__country" title="Country">Turkey</div>
+
+        <div class="footer__bottom">
+            <ul class="footer__bottom--left">
+                <li><a href="">Advertising</a> </li>
+                <li><a href="">Business</a> </li>
+                <li><a href="">How Search Works</a> </li>
+            </ul>
+
+            <ul class="footer__bottom--right">
+                <li><a href="">Privacy</a></li>
+                <li><a href="">Terms</a></li>
+                <li><a href="">Settings</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+    <!-- pc ler derler insanlar anlar  -->
+
+
+    
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+    
+</body>
+</html>

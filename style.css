@@ -1,0 +1,256 @@
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header {
+    width: 100%;
+    padding: 15px 15px 0px 15px;
+
+}
+
+
+.header__left {
+    float: left;
+    margin-top: 13px;
+
+}
+
+
+.header__right {
+    float: right;
+    margin-top: 13px;
+
+}
+
+.clear {
+    clear: both;
+}
+
+
+ul {
+    list-style-type: none;
+
+}
+
+ul li {
+    display: inline-block;
+}
+
+
+ul a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.8;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+ul a:hover {
+    text-decoration: underline;
+}
+
+
+.header__right--appicon {
+    vertical-align: middle;
+    opacity: 0.7;
+
+}
+
+
+.header__right--appicon:hover {
+    opacity: 1;
+    cursor: pointer;
+
+}
+
+
+.header__right--button {
+    background-color: #4285F4;
+    color: white;
+    border: none;
+    font-weight: 700;
+    text-align: center;
+    height: 30px;
+    width: 70px;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-right: 1rem;
+
+}
+
+
+
+.header__right--button:hover {
+    box-shadow: rgba(0, 0, 0, 0.15)0px 1px 0px 0px;
+    
+}
+
+.main {
+    /* background-color: rgb(252, 99, 99); */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+
+}
+
+
+
+.main__logo {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+    /* display: block;
+    margin: 200px auto 0px; */
+    height: 95px;
+    width: 272px;
+
+
+
+}
+
+
+.main__search-bar {
+    height: 38px;
+    width: 460px;
+    border: 1px solid #d3d3d3;
+    margin: 28px auto;
+    border-radius: 25px;
+
+}
+
+.main__search-bar:hover {
+    box-shadow: rgb(211, 211, 211) 3px 3px 5px 0px;
+    
+
+}
+
+
+.main__search-bar--magnifier {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-left: 10px;
+
+}
+
+.main__search-bar--microphone {
+    height: 20px;
+    width: 15px;
+    vertical-align: middle;
+    cursor: pointer;
+
+}
+
+
+.main__search-bar--input {
+    height: 28px;
+    width: 380px;
+    cursor: text;
+    border: none;
+    outline: none;
+
+}
+
+
+
+.main__buttons--left,
+.main__buttons--right {
+    background-color: #efefef;
+    text-align: center;
+    height: 36px;
+    /* width: 96px; */
+    border: 1px solid #efefef;
+    margin: 8px 4px;
+    padding: 1px 4px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+
+/* butonlara geldigimizde birbirini iterler
+cünkü hover da border var ama normal de yok 
+bu nedenle normal durum icin de hover veririz
+ama background ile ayni renk olur görülmez
+hover daki border rengi farkli olur */
+
+
+.main__buttons--left:hover,
+.main__buttons--right:hover { 
+    border: 1px solid #d3d3d3;
+}
+
+
+
+.main__language {
+    width: 100%;
+    text-align: center;
+    height: 15px;
+    margin: 20px 0px 13px 0px;
+
+}
+
+
+.main__language a {
+    color: #000080;
+}
+
+
+
+.footer {
+    /* önce fixle diyoruz 
+    daha sonra nereye fix leyecegini söylüyoruz  */
+    position: fixed;
+    bottom: 0px;
+    background-color: #f2f2f2;
+    line-height: 40px;  /* footer in yüksekligini belirlemek icin */
+    width: 100%;
+    color: #5f6368;
+
+}
+
+
+.footer__country {
+    margin-left: 15px;
+
+}
+
+
+
+.footer__bottom--left {
+    float: left;
+    padding-left: 10px;
+}
+
+.footer__bottom--right {
+    float: right;
+
+}
+
+
+.footer__bottom {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
